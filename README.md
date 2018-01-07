@@ -8,8 +8,12 @@ and get detailed information about the location of that resourse on the BCIT cam
 The prototype was developed as a quick demonstration of the possiblities of this kind of app and is not intended as a fully functional 
 implementation. 
 Besides Michael Andersen, the other four members of the Hall-Pass team are:
+
 https://github.com/jqhoang
+
 https://github.com/Jeffery-Wasty
+
 https://github.com/thisliangwu
+
 https://github.com/Aitherio
 
