@@ -1,0 +1,107 @@
+#sw01blowup {
+   display: none;
+   position: absolute;
+   width: 50%;
+   height: 50%;
+   top: 350px;
+   left: 0px;  
+   
+}
+#sw03blowup {
+   display: none;
+   position: absolute;
+   width: 50%;
+   height: 50%;
+   top: 350px;
+   left: 0px;  
+   
+}
+.stars {
+	width: 25%;
+	height: 25%;
+}
+.bolded {
+	font-weight: bold;
+}
+
+#sw01floor2zoomd {
+	display: none;
+	position: absolute;
+	right: 400px;
+	top: 410px;
+	background-color: white;
+	width: 250px;
+	border: 1px solid black;
+}
+#sw05blowup {
+   display: none;
+   position: absolute;
+   width: 20%;
+   height: 30%;
+   top: 350px;
+   left: 200px;  
+  
+}
+#container {
+	position: relative;
+}
+
+#clear {
+	display:  none;
+}
+
+.map {
+	width: 100%;
+	
+}
+
+.selector-holder {
+	width: 300px;
+	height: 1000px;
+}
+
+.resource-selector {
+	width: 20%;
+	height: 20%;
+	margin: auto;
+	transform: translate(20%, 50%);
+	position: absolute;
+	float: left;
+}
+
+button {
+	transition: background 0.5s ease;
+	text-align: center;
+	width: 100%;
+	background: #eaffff;
+	color: black;
+	border: 1px solid black;
+	min-width: 260px;
+}
+
+#microwave-button {
+	border: 1px solid black;
+}
+#outlet-button {
+	border: 1px solid black;
+}
+#washroom-button {
+	border: 1px solid black;
+}
+#clear-button {
+	border: 1px solid black;
+}
+
+
+#title {
+	border: 1px solid black;
+	font-size: 200%;
+}
+#title:hover {
+	background: #eaffff;
+}
+.button-image {
+	width: 12%;
+	height: 12%;
+	margin-right: 25px;
+}

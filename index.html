@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="scripts/map.js"></script>
+  <title>Hall Pass</title>
+
+</head>
+
+<body>
+
+	
+
+<script type="text/javascript">
+$(function() {
+  $("#sw01").on('click', function () {
+  $(".zooms").hide(0);
+  if ($("#clear").is(":visible")) {
+  	if ($("#sw01blowup").is(":visible")) {
+	$( "#sw01blowup" ).fadeOut(1000);
+	}
+	if ($("#sw01blowup").is(":hidden")) {
+	$( ".blowups").hide(0);
+	$( "#sw01blowup" ).slideToggle(2000);
+	}
+} else
+	{alert('Please select a resource to display.');}
+
+  });
+  $("#sw03").on('click', function () {
+  $(".zooms").hide(0);
+  if ($("#clear").is(":visible")) {
+  	if ($("#sw03blowup").is(":visible")) {
+	$( "#sw03blowup" ).fadeOut(1000);
+	}
+  if ($("#sw03blowup").is(":hidden")) {
+	$( ".blowups").hide(0);
+	$( "#sw03blowup" ).slideToggle(2000);
+	}
+	} else
+	{alert('Please select a resource to display.');}
+	});
+	$("#sw05").on('click', function () {
+	$(".zooms").hide(0);
+	if ($("#clear").is(":visible")) {
+  	if ($("#sw05blowup").is(":visible")) {
+	$( "#sw05blowup" ).fadeOut(1000);
+	}
+  if ($("#sw05blowup").is(":hidden")) {
+	$( ".blowups").hide(0);
+	$( "#sw05blowup" ).slideToggle(2000);
+	}
+	} else
+	{alert('Please select a resource to display.');}
+	});
+	$("#sw01floor2zoom").on('click', function () {
+	
+  	if ($("#sw01floor2zoomd").is(":visible")) {
+	$("#sw01floor2zoomd").fadeOut(1000);
+	}
+  if ($("#sw01floor2zoomd").is(":hidden")) {
+	$( ".zooms").hide(0);
+	$( "#sw01floor2zoomd").slideToggle(2000);
+	}
+	});
+
+});  
+</script>
+
+<div id="container" class="container-fluid">
+			<div class="resource-selector">
+			<button class="btn btn-lg" id="title">Resource Selector</button><br />
+			<button onclick="microwaves()" onmouseover="changeBackground(this)" onmouseout="changeBackgroundBack(this)" id="microwave-button" class="btn btn-lg"><img src="images/microwave.png" class="button-image">Microwaves</button><br />
+    		<button onclick="power_outlets()" onmouseover="changeBackground(this)" onmouseout="changeBackgroundBack(this)" id="outlet-button" class="btn btn-lg"><img src="images/power.png" class="button-image">Power Outlets</button><br />
+    		<button onclick="washrooms()" onmouseover="changeBackground(this)" onmouseout="changeBackgroundBack(this)" id="washroom-button" class="btn btn-lg"><img src="images/washroom.png" class="button-image">Washrooms</button>
+    		<button onclick="clearbutton()" onmouseover="changeBackground(this)" onmouseout="changeBackgroundBack(this)" id="clear-button" class="btn btn-lg">Clear</button>
+			</div>
+<img src="images/schoolmap.png" alt="Map of BCIT" id="map" class="map" usemap="#schoolmap"/>
+<map name="schoolmap">
+		<area shape="rect" coords="700,225,785,355" alt="SW01" id ="sw01"/>
+		<area shape="rect" coords="660,225,690,355"  alt="SW03" id ="sw03" />
+		<area shape="rect" coords="620,300,660,345" alt="SW05" id ="sw05" />
+	</map>
+	<img src="images/SW01-Microwave.png" alt="sw01" id="sw01blowup" class="blowups" usemap="sw01zoom"/>
+	<img src="images/SW03-Microwave.png" alt="sw03" id="sw03blowup" class="blowups"/>
+	<img src="images/SW05-Microwave.png" alt="sw05" id="sw05blowup" class="blowups"/>
+	<map name="sw01zoom">
+	<area shape ="rect" coords ="200,100,500,200" id="sw01floor2zoom"/>
+	</map>
+	<div class="zooms" id="sw01floor2zoomd"><p class="bolded">SW01 Second Floor North Washroom</span></p><p><img src = "images/Five Stars.jpg" alt="5 Stars" class="stars"/></p>
+	<p>Average User Rating: 5 stars</p>
+	5 stalls. Busy during midday on weekdays.</div>
+	</div>
+	<div id="clear"></div>
+</body>
+</html>
