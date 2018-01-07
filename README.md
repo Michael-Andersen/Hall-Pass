@@ -7,6 +7,7 @@ The Hall-Pass web application takes the form of an interactive map allowing user
 and get detailed information about the location of that resourse on the BCIT campus.
 The prototype was developed as a quick demonstration of the possiblities of this kind of app and is not intended as a fully functional 
 implementation. 
+Hall-Pass won third prize at the 2018 BCIT CST Hackathon.
 Besides Michael Andersen, the other four members of the Hall-Pass team are:
 
 https://github.com/jqhoang
